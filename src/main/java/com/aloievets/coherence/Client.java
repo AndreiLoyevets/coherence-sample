@@ -6,7 +6,7 @@ import com.tangosol.net.NamedCache;
 /**
  * Created by Andrew on 25.05.2017.
  */
-public class Launcher {
+public class Client {
 
     public static void main(String[] args) {
         String key = "k1";
@@ -14,7 +14,6 @@ public class Launcher {
         CacheFactory.ensureCluster();
         NamedCache cache = CacheFactory.getCache("hello-example");
         cache.put(key, value);
-        System.out.println((String)cache.get(key));
-        CacheFactory.shutdown();
+        System.out.println((String) cache.get(key));
     }
 }
