@@ -31,41 +31,17 @@
                 <version>3.0.0</version>
                 <executions>
                     <execution>
-                        <id>make-client</id>
+                        <id>make-jar-with-dependencies</id>
                         <phase>package</phase>
                         <goals>
                             <goal>single</goal>
                         </goals>
                         <configuration>
                             <appendAssemblyId>false</appendAssemblyId>
-                            <archive>
-                                <manifest>
-                                    <mainClass>com.aloievets.coherence.Client</mainClass>
-                                </manifest>
-                            </archive>
                             <descriptorRefs>
                                 <descriptorRef>jar-with-dependencies</descriptorRef>
                             </descriptorRefs>
-                            <finalName>${project.artifactId}-client</finalName>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>make-node-launcher</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <appendAssemblyId>false</appendAssemblyId>
-                            <archive>
-                                <manifest>
-                                    <mainClass>com.aloievets.coherence.NodeLauncher</mainClass>
-                                </manifest>
-                            </archive>
-                            <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                            </descriptorRefs>
-                            <finalName>${project.artifactId}-node-launcher</finalName>
+                            <finalName>${project.artifactId}</finalName>
                         </configuration>
                     </execution>
                 </executions>

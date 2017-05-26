@@ -1,15 +1,14 @@
 <?xml version='1.0'?>
-<coherence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xmlns="http://xmlns.oracle.com/coherence/coherence-operational-config"
+<coherence
+        xmlns="http://xmlns.oracle.com/coherence/coherence-operational-config"
 >
     <cluster-config>
         <member-identity>
-            <cluster-name>cluster_name</cluster-name>
+            <cluster-name system-property="tangosol.coherence.cluster">aloievets-cluster</cluster-name>
         </member-identity>
         <multicast-listener>
             <address>224.3.6.0</address>
-            <port>9876</port>
-            <time-to-live>0</time-to-live>
+            <port>3059</port>
         </multicast-listener>
     </cluster-config>
 </coherence>

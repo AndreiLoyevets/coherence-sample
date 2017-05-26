@@ -1,0 +1,1 @@
+java -Dtangosol.coherence.cacheconfig=cache-config-client.xml -Dtangosol.coherence.distributed.localstorage=false -cp ../target/coherence-sample.jar com.aloievets.coherence.client.Launcher

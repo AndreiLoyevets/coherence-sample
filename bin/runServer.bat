@@ -1,0 +1,1 @@
+java -Dtangosol.coherence.cacheconfig=cache-config-server.xml -cp ../target/coherence-sample.jar com.aloievets.coherence.server.Launcher
