@@ -19,6 +19,19 @@
             </backing-map-scheme>
             <autostart>true</autostart>
         </distributed-scheme>
+        <proxy-scheme>
+            <service-name>ExtendTcpProxyService</service-name>
+            <thread-count>5</thread-count>
+            <acceptor-config>
+                <tcp-acceptor>
+                    <local-address>
+                        <address>127.0.0.1</address>
+                        <port>9099</port>
+                    </local-address>
+                </tcp-acceptor>
+            </acceptor-config>
+            <autostart>true</autostart>
+        </proxy-scheme>
     </caching-schemes>
 
 </cache-config>
